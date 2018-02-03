@@ -1,0 +1,29 @@
+<p>
+  Home works!
+</p>
+
+<div class="Home">
+    <a [routerLink]="['/new']">Add a quotable author</a>
+    <h4>Here is a list of the authors</h4>
+     
+     {{authors}}
+  <table >
+    <thead>
+        <tr>
+          <th>Author</th>
+          <th>Action Available</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let author of authors">
+          <td>{{author.name}}</td>
+          <td>
+            <button> View quotes </button>
+            <button> Edit </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+ 
